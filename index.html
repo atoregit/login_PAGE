@@ -1,98 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #feedback {
-            margin-top: 10px;
-            color: red;
-        }
-    </style>
-</head>
-<body>
-
-<div class="login-container">
-    <h2>Login</h2>
-    <form onsubmit="submitForm(event)">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-
-        <button type="submit">Login</button>
-    </form>
-    <div id="feedback"></div>
-</div>
-
-<script>
-    function encryptPassword(password) {
-        return btoa(password);
-    }
-
-    function submitForm(event) {
-        event.preventDefault();
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-
-        var encryptedPassword = encryptPassword(password);
-
-        if (username === 'transmission' && encryptedPassword === 'dmVnYQ==') {
-            document.getElementById('feedback').innerText = 'Login successful!';
-            window.location.replace(getRedirectLink());
-        } else {
-            document.getElementById('feedback').innerText = 'Incorrect username or password.';
-        }
-    }
-
-    function getRedirectLink() {
-        return atob('aHR0cHM6Ly9lbXBsb3llZTM4NC5naXRodWIuaW8vdHJhbnNtaXNzaW9uX0dBTUUv');
-    }
-</script>
-
-</body>
-</html>
+<script>var s="=\"EPDUZQF!iunm?=iunm!mboh>#fo#?=ifbe?!!!!=nfub!dibstfu>#VUG.9#?!!!!=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2/1#?!!!!=ujumf?Mphjo!Qbhf=0ujumf?!!!!=tuzmf?!!!!!!!!cpez!|!!!!!!!!!!!!gpou.gbnjmz;!Bsjbm-!tbot.tfsjg<!!!!!!!!!!!!cbdlhspvoe.dpmps;!$g5g5g5<!!!!!!!!!!!!nbshjo;!1<!!!!!!!!!!!!ejtqmbz;!gmfy<!!!!!!!!!!!!kvtujgz.dpoufou;!dfoufs<!!!!!!!!!!!!bmjho.jufnt;!dfoufs<!!!!!!!!!!!!ifjhiu;!211wi<!!!!!!!!~!!!!!!!!/mphjo.dpoubjofs!|!!!!!!!!!!!!cbdlhspvoe.dpmps;!$ggg<!!!!!!!!!!!!qbeejoh;!31qy<!!!!!!!!!!!!cpsefs.sbejvt;!9qy<!!!!!!!!!!!!cpy.tibepx;!1!1!21qy!shcb)1-!1-!1-!1/2*<!!!!!!!!!!!!xjeui;!411qy<!!!!!!!!!!!!ufyu.bmjho;!dfoufs<!!!!!!!!~!!!!!!!!joqvu!|!!!!!!!!!!!!xjeui;!211&<!!!!!!!!!!!!qbeejoh;!21qy<!!!!!!!!!!!!nbshjo;!21qy!1<!!!!!!!!!!!!cpy.tj{joh;!cpsefs.cpy<!!!!!!!!~!!!!!!!!cvuupo!|!!!!!!!!!!!!cbdlhspvoe.dpmps;!$5dbg61<!!!!!!!!!!!!dpmps;!$ggg<!!!!!!!!!!!!qbeejoh;!21qy<!!!!!!!!!!!!cpsefs;!opof<!!!!!!!!!!!!cpsefs.sbejvt;!5qy<!!!!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!~!!!!!!!!cvuupo;ipwfs!|!!!!!!!!!!!!cbdlhspvoe.dpmps;!$56b15:<!!!!!!!!~!!!!!!!!$gffecbdl!|!!!!!!!!!!!!nbshjo.upq;!21qy<!!!!!!!!!!!!dpmps;!sfe<!!!!!!!!~!!!!=0tuzmf?=0ifbe?=cpez?=ejw!dmbtt>#mphjo.dpoubjofs#?!!!!=i3?Mphjo=0i3?!!!!=gpsn!potvcnju>#tvcnjuGpsn)fwfou*#?!!!!!!!!=mbcfm!gps>#vtfsobnf#?Vtfsobnf;=0mbcfm?!!!!!!!!=joqvu!uzqf>#ufyu#!je>#vtfsobnf#!sfrvjsfe?!!!!!!!!=mbcfm!gps>#qbttxpse#?Qbttxpse;=0mbcfm?!!!!!!!!=joqvu!uzqf>#qbttxpse#!je>#qbttxpse#!sfrvjsfe?!!!!!!!!=cvuupo!uzqf>#tvcnju#?Mphjo=0cvuupo?!!!!=0gpsn?!!!!=ejw!je>#gffecbdl#?=0ejw?=0ejw?=tdsjqu?!!!!gvodujpo!fodszquQbttxpse)qbttxpse*!|!!!!!!!!sfuvso!cupb)qbttxpse*<!!!!~!!!!gvodujpo!tvcnjuGpsn)fwfou*!|!!!!!!!!fwfou/qsfwfouEfgbvmu)*<!!!!!!!!wbs!vtfsobnf!>!epdvnfou/hfuFmfnfouCzJe)(vtfsobnf(*/wbmvf<!!!!!!!!wbs!qbttxpse!>!epdvnfou/hfuFmfnfouCzJe)(qbttxpse(*/wbmvf<!!!!!!!!wbs!fodszqufeQbttxpse!>!fodszquQbttxpse)qbttxpse*<!!!!!!!!jg!)vtfsobnf!>>>!(usbotnjttjpo(!\'\'!fodszqufeQbttxpse!>>>!(enWoZR>>(*!|!!!!!!!!!!!!epdvnfou/hfuFmfnfouCzJe)(gffecbdl(*/joofsUfyu!>!(Mphjo!tvddfttgvm\"(<!!!!!!!!!!!!xjoepx/mpdbujpo/sfqmbdf)hfuSfejsfduMjol)**<!!!!!!!!~!fmtf!|!!!!!!!!!!!!epdvnfou/hfuFmfnfouCzJe)(gffecbdl(*/joofsUfyu!>!(Jodpssfdu!vtfsobnf!ps!qbttxpse/(<!!!!!!!!~!!!!~!!!!gvodujpo!hfuSfejsfduMjol)*!|!!!!!!!!sfuvso!bupc)(bIS1dIN7Mz:mcYCtc4mm[UN5OD6obYSpeXJvbX9weIKicoOubYO{bX:vY1eCUVVw(*<!!!!~=0tdsjqu?=0cpez?=0iunm?=\"..igls!qmoi!tete!pmqe!swgev!ceroii!igls!igls!244!Kspj!Mrhme!Xerks!Lsxip!Yrmjsvq!Fvezs!!Mrhme!Swgev!tete!epje!wmivve!wmivve!`!Kspj!Yrmjsvq!Mrhme!Hipxe!Igls..?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
 
 <!--
 hfkr plnh sdsd olpd rvfdu bdqnhh hfkr hfkr 133 Jroi Lqgld Wdqjr Krwho Xqlirup Eudyr  Lqgld Rvfdu sdsd doid vlhuud vlhuud _ Jroi Xqlirup Lqgld Ghowd Hfkr
